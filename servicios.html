@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COMICAOL - Tarjetas</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background-color: #FFFBF2;
+  background-image: 
+    linear-gradient(rgba(255,251,242,0.55), rgba(255,251,242,0.55)),
+    url('cafe comicaol.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #3E2723; 
+  line-height: 1.6; 
+}
+.Tarjeta{
+  background:#FFF;
+  border:2.5px solid #222;
+  border-radius:20px;
+  padding:20px;
+  max-width:900px;
+  margin:0 auto 30px auto;
+}
+.tarjeta h2{
+  text-align:center;
+  font-weight:800;
+  font-size:1.6rem;
+  margin-bottom:18px;
+}
+
+/* CAFÉ - 1 IMAGEN + TEXTO */
+.lista-cafe{
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+}
+.item-cafe{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:50px;
+  align-items:center;
+}
+.item-cafe .foto{
+  border:2px solid #222;
+  border-radius:12px;
+  height:130px;
+  background:#eee;
+  overflow:hidden;
+}
+.item-cafe .foto img{width:100%;height:100%;object-fit:cover}
+.item-cafe .desc{
+  border:2px solid #222;
+  border-radius:12px;
+  padding:14px;
+  min-height:130px;
+  font-size:.9rem;
+}
+
+/* PROCESO - SOLO IMAGEN + NOMBRE */
+.proceso-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+.proceso-item{
+  border:2px solid #222;
+  border-radius:14px;
+  padding:10px;
+  text-align:center;
+}
+.proceso-item .foto{
+  border:2px solid #222;
+  border-radius:10px;
+  height:110px;
+  background:#eee;
+  overflow:hidden;
+}
+.proceso-item .foto img{width:100%;height:100%;object-fit:cover}
+.proceso-item .nombre{
+  margin-top:8px;
+  font-weight:700;
+  font-size:.9rem;
+  border:1.5px solid #222;
+  border-radius:20px;
+  padding:5px;
+  background:#f9f9f3;
+}
+	/* --- BOMBAS Y FINANCIAMIENTOS --- */
+  .lista-bombas{
+    display:flex; flex-wrap:wrap; gap:12px;
+    justify-content:center; padding:0 12px;
+  }
+  .card-bomba{
+    width:165px; background:#fff; border:1.8px solid #222;
+    border-radius:20px; padding:10px; text-align:center;
+    box-sizing:border-box;
+  }
+  .card-bomba img{
+    width:100%; height:110px; object-fit:cover;
+    border-radius:14px; border:1.5px solid #222;
+    background:#f5f5f5;
+  }
+  .card-bomba b{
+    display:block; margin:8px 0 8px 0; font-size:16px;
+  }
+	h2{
+  text-align: center !important;
+  width: 100% !important;
+  display: block !important;
+  margin: 30px auto 15px auto !important;
+}
+
+</style>
+</head>
+<body>
+
+<!-- 1. CAFÉ -->
+<div class="tarjeta">
+  <h2>CAFÉ</h2>
+  <div class="lista-cafe">
+    <div class="item-cafe">
+      <div class="foto"><img src="cafe comicaol.jpeg"></div>
+      <div class="desc">
+        <b>Café COMICAOL</b><br><br>
+        
+        La Cooperativa Mixta de Caficultores de Oriente Limitada (COMICAOL) brinda a sus productores el servicio de procesamiento de café, contribuyendo al adecuado manejo y acondicionamiento del grano para garantizar su calidad.
+        El servicio comprende la recepción del café, control de peso, trilla, tostado, molido y sellado, de acuerdo con los requerimientos establecidos para el adecuado procesamiento y presentación del producto.
+        Este servicio permite a los productores contar con el apoyo de la cooperativa para obtener un producto con mejores condiciones de calidad y presentación para su comercialización.
+      </div>
+    </div>
+  </div>
+</div><br>
+
+	
+
+<!-- 2. PROCESO - SOLO FOTO + NOMBRE -->
+<div class="tarjeta">
+  <h2>SERVICIOS QUE SE OFRECEN</h2><BR>
+	<h2>PROCESO DEL CAFE</h2>
+  <div class="proceso-grid">
+    <div class="proceso-item">
+      <div class="foto"><img src="trillado.jpeg"></div>
+      <div class="nombre">Trillado</div>
+    </div>
+    <div class="proceso-item">
+      <div class="foto"><img src="tostado.jpeg"></div>
+      <div class="nombre">Tostado</div>
+    </div>
+    <div class="proceso-item">
+      <div class="foto"><img src="molido.jpeg"></div>
+      <div class="nombre">Molido</div>
+    </div>
+    <div class="proceso-item">
+      <div class="foto"><img src="imagenempaquetado.jpeg"></div>
+      <div class="nombre">Empaquetado</div><br>
+    </div>
+  </div>
+</div><br>
+
+<h2 style="text-aling: center;">ALQUILER DE EQUIPOS</h2>
+<div class="lista-bombas">
+  <div class="card-bomba">
+    <img src="maquinasmuchomas.jpeg" alt="Café Cereza">
+    <b></b>
+  </div>
+  <div class="card-bomba">
+    <img src="otrotipomaquinas.jpeg" alt="Café Lavado">
+    <b></b>
+  </div>
+  <div class="card-bomba">
+    <img src="WWOTROMASS.jpeg" alt="Pergamino Seco">
+    <b></b>
+  </div>
+</div><br>
+
+<h2 style="text-aling: center;">FINANCIAMIENTOS</h2>
+<div class="lista-bombas">
+  <div class="card-bomba">
+    <img src="fertilizantes.jpeg" alt="Café Cereza">
+    <b></b>
+  </div>
+  <div class="card-bomba">
+    <img src="fertilizante financiamiento.jpeg" alt="Café Lavado">
+    <b></b>
+  </div>
+  <div class="card-bomba">
+    <img src="fertiliii.jpeg" alt="Pergamino Seco">
+    <b></b>
+  </div>
+</div>
+
+  </div>
+ <div style="width:100%; display:flex; justify-content:center; margin: 50px 0 40px 0;">
+  <a href="index.html" style="
+    display:inline-block;
+    background-color: #2eb5e5;
+    color: #3E2723;
+    padding: 14px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #3E2723;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  ">← Volver al Inicio</a>
+
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compra de Café</title>
+<style>
+  *{margin:0; padding:0; box-sizing:border-box;}
+ body{
+  background-color: #FFFBF2;
+  background-image: 
+    linear-gradient(rgba(255,251,242,0.55), rgba(255,251,242,0.55)),
+    url('cafe comicaol.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #3E2723; 
+  line-height: 1.6; 
+}
+  /* BARRA DE NAVEGACION */
+  nav{
+    background: #D5E8D4; /* verde más pálido */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+  }
+  nav .logo{
+    font-weight: bold;
+    font-size: 20px;
+    color: #3E2723;
+  }
+  nav a{
+    color: #3E2723;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 700;
+  }
+  nav a:hover{
+    color: #722F37;
+    border-bottom: 2px solid #722F37;
+  }
+
+  /* SECCION TIPOS */
+  .seccion-cafe{
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .seccion-cafe h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .contenedor-tarjetas{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .tarjeta{
+    background: white;
+    width: 300px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border: 2px solid #D9B18E; /* borde piel */
+    transition: transform 0.2s;
+  }
+  .tarjeta:hover{
+    transform: translateY(-5px);
+  }
+  .tarjeta img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #F5EFE6; /* mientras cargas tu foto */
+  }
+  .tarjeta h3{
+    padding: 18px;
+    font-size: 20px;
+  }
+  /* BOTON OVALADO */
+  .btn-contacto{
+    display: inline-block;
+    margin-top: 50px;
+    background: #D9B18E; /* piel */
+    color: #3E2723;
+    padding: 16px 45px;
+    border-radius: 50px; /* ovalado como tu dibujo */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #3E2723;
+  }
+  .btn-contacto:hover{
+    background: #3E2723;
+    color: #FFFAF0;
+  }
+
+  .titulo-proceso{
+  text-align:center; font-size:22px; color:#3E2723; 
+  font-weight:bold; margin:20px 0; border:2px solid #d7c4a5;
+  padding:10px; border-radius:10px; background:white;
+}
+.contenedor-proceso{
+  max-width:900px; margin:auto; background:white;
+  border:2px solid #d7c4a5; border-radius:15px; padding:20px;
+}
+.fila{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:10px; margin-bottom:15px; flex-wrap:wrap;
+}
+.tarjeta{
+  width:140px; text-align:center; background:#fff;
+  border:1px solid #e0d0b8; border-radius:12px;
+  padding:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+.tarjeta .foto{
+  width:100%; height:100px; background:#f5f0e8;
+  border-radius:8px; display:flex; align-items:center;
+  justify-content:center; overflow:hidden; border:1px dashed #c9b896;
+}
+.tarjeta .foto img{ width:100%; height:100%; object-fit:cover; }
+.tarjeta .nombre{
+  margin-top:6px; font-size:11px; font-weight:bold;
+  background:#f5f0e8; border:1px solid #d7c4a5;
+  border-radius:20px; padding:3px 6px; color:#3E2723;
+}
+.tarjeta .nombre::before{ content:"• "; color:#7bb342; }
+.flecha{ font-size:24px; color:#7bb342; font-weight:bold; }
+.flecha-abajo{ text-align:center; font-size:28px; color:#7bb342; margin:5px 0; }
+.fila-centro{ justify-content:center; }
+
+@media(max-width:600px){
+  .fila{ flex-direction:column; }
+  .flecha{ transform:rotate(90deg); }
+  .fila.fila-2{ flex-direction:column-reverse; }
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Compras </div>
+</nav>
+
+<section class="seccion-cafe" id="tipos">
+  <h1>Tipo de café que Compramos</h1>
+
+  <div class="contenedor-tarjetas">
+
+    <div class="tarjeta">
+      <img src="CAFE MADURO.jpeg" alt="Café Cereza">
+      <h3>Cereza</h3>
+    </div>
+
+    <div class="tarjeta">
+      <img src="cafe+1.jpeg" alt="Café Lavado">
+      <h3>Lavado</h3>
+    </div>
+
+    <div class="tarjeta">
+      <img src="pergaminoooooooooooooooo.jpeg" alt="Pergamino Seco">
+      <h3>Pergamino Seco</h3>
+    </div>
+
+  </div>
+
+  <a href="#contacto" class="btn-contacto">Interesado Contáctanos Al 3248-0905</a>
+
+
+<h2 class="titulo-proceso">Proceso que pasa el café</h2>
+
+<div class="contenedor-proceso">
+
+  <!-- FILA 1 -->
+  <div class="fila">
+    <div class="tarjeta">
+      <div class="foto"><img src="CAFE MADURO.jpeg" alt="Uva"></div>
+      <div class="nombre">Uva</div>
+    </div>
+    <div class="flecha">→</div>
+    <div class="tarjeta">
+      <div class="foto"><img src="cafe+1.jpeg" alt="Lavado"></div>
+      <div class="nombre">Lavado</div>
+    </div>
+    <div class="flecha">→</div>
+    <div class="tarjeta">
+      <div class="foto"><img src="SECO.jpeg" alt="Secado"></div>
+      <div class="nombre">Secado</div>
+    </div>
+  </div>
+
+  <!-- BAJADA -->
+  <div style="text-align:right; padding-right:70px;" class="flecha">⤵</div>
+
+  <!-- FILA 2 - va al reves como tu dibujo -->
+  <div class="fila fila-2">
+    <div class="tarjeta">
+      <div class="foto"><img src="bodega.jpeg" alt="Salida"></div>
+      <div class="nombre">Salida</div>
+    </div>
+    <div class="flecha">←</div>
+    <div class="tarjeta">
+      <div class="foto"><img src="epor.jpeg" alt="Exportado"></div>
+      <div class="nombre">Exportado</div>
+    </div>
+    <div class="flecha">←</div>
+    <div class="tarjeta">
+      <div class="foto"><img src="bodega.jpeg" alt="Bodega"></div>
+      <div class="nombre">Bodega</div>
+    </div>
+  </div>
+
+  <div class="flecha-abajo">↓</div>
+
+  <!-- FILA 3 -->
+  <div class="fila fila-centro">
+    <div class="tarjeta">
+      <div class="foto"><img src="tostado.jpeg" alt="Tostado"></div>
+      <div class="nombre">TOSTADO</div>
+    </div>
+    <div class="flecha">←</div>
+    <div class="tarjeta">
+      <div class="foto"><img src="tostaduria.jpeg" alt="Tostaduria"></div>
+      <div class="nombre">Tostaduria</div>
+    </div>
+     <div class="flecha">→</div>
+    <div class="tarjeta">
+      <div class="foto"><img src="molido.jpeg" alt="Molido"></div>
+      <div class="nombre">Molido</div>
+    </div>
+  </div>
+  </section>
+<div style="width:100%; display:flex; justify-content:center; margin: 50px 0 40px 0;">
+  <a href="index.html" style="
+    display:inline-block;
+    background-color: #D5E8D4;
+    color: #3E2723;
+    padding: 14px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #3E2723;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  ">← Volver al Inicio</a>
+
+
+</body>
+</html>

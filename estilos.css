@@ -1,0 +1,127 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { 
+  background-color: #FFFBF2;
+  background-image: 
+    linear-gradient(rgba(255,251,242,0.55), rgba(255,251,242,0.55)),
+    url('fondo cafetal otro.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #3E2723; 
+  line-height: 1.6; 
+}
+img { max-width: 100%; height: auto; }
+
+/* HEADER VERDE */
+header { background: #7bb342; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { font-size: 18px; color: #2e3d1f; font-weight: 600; letter-spacing: 0.5px; }
+.logo-esquina { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid white; }
+
+/* MENU EN UNA SOLA LINEA - SE DESLIZA CON EL DEDO */
+nav{ background: #ffffff !important; padding: 12px 20px; display: flex; flex-wrap: nowrap !important; overflow-x: auto; gap: 30px; border-bottom: 1px solid #eee; }
+nav::-webkit-scrollbar { display: none; }
+nav a{ color: #555 !important; text-decoration: none; font-weight: 500; font-size: 13px; white-space: nowrap; }
+
+/* 3 FOTOS REDONDAS */
+.contenedor-cafe { display: flex; justify-content: center; gap: 30px; padding: 40px 20px; flex-wrap: wrap; }
+.imagen-redonda { width: 280px; height: 280px; border-radius: 50%; object-fit: cover; border: 3px solid #ddd; display: block; }
+
+/* SECCIONES */
+section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+.Bienvenidos { background: linear-gradient(to right, #3e2723, #5D4037); color: white; text-align: center; border-radius: 0 0 30px 30px; padding: 50px 20px; }
+.Bienvenidos h2 { font-size: 32px; margin-bottom: 10px; }
+
+/* TARJETAS MISION VISION ETC */
+.card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; border-left: 6px solid #8D6E63; text-align: center; }
+.card h2 { color: #5D4037; margin-bottom: 10px; }
+.card p { text-align: justify; text-align-last: center; }
+
+.contenedor-tarjetas, .contenedor-a-la-par { display: flex; gap: 20px; justify-content: center; padding: 20px; flex-wrap: wrap; }
+.tarjeta { background: white; width: 350px; max-width: 100%; padding: 20px; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-top: 4px solid #795548; text-align: center; }
+
+/* SERVICIOS */
+.servicios { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+.servicios div { background: #3E2723; color: #7bb342; padding: 20px; border-radius: 12px; text-align: center; }
+
+/* OTRAS IMAGENES */
+.pequeña { width: 400px; max-width: 90%; height: auto; display: block; margin: 0 auto; }
+
+/* CONTACTO */
+.contacto { background: #7bb342; border-radius: 15px; text-align: center; padding: 30px; }
+.contacto p { margin: 8px 0; }
+
+.pie-negro {
+  background: #000000 !important;
+  color: white !important;
+  text-align: center !important;
+  padding: 15px !important;
+  
+  /* ESTO ES LO QUE LO HACE ANCHO DE ORILLA A ORILLA */
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  display: block !important;
+  position: relative !important;
+  left: 0 !important;
+  box-sizing: border-box !important;
+}
+            
+/* CELULAR */
+@media (max-width: 768px) {
+  header h1 { font-size: 13px; }
+  .imagen-redonda { width: 250px; height: 250px; }
+  .contenedor-cafe { gap: 20px; }
+}
+/* BOTONCITOS PARA QUE SE IDENTIFIQUE CADA UNO */
+nav{
+  background: #ffffff !important;
+  padding: 10px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  justify-content: center;
+}
+
+nav a{
+  background: #f5f0e8 !important;
+  border: 1px solid #d7c4a5 !important;
+  padding: 6px 12px !important;
+  border-radius: 20px !important;
+  font-size: 12px !important;
+  color: #3E2723 !important;
+  display: inline-block !important;
+  margin: 2px !important;
+}
+
+nav a::before{ 
+  content:"• "; 
+  color:#7bb342; 
+  font-weight:bold; 
+  font-size:16px;
+}
+
+nav a:hover{
+  background: #7bb342 !important;
+  color: white !important;
+  border-color: #7bb342 !important;
+}
+/* En celular queda como está ahora */
+header h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Solo en computadora se hace más grande y negrita */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 30px !important; /* si lo querés más grande aún, ponele 26px o 28px */
+    font-weight: 900 !important;
+  }
+}
+
+a[href*="HISTORIA"], a[href*="SERVICIOS"], a[href*="MARCA"], a[href*="EQUIPO"], a[href*="COMITES"], a[href*="TIENDA"], a[href*="COMPRAS"], a[href*="CONTACTO"], a[href*="MERCADO"] {
+  font-weight: bold !important;
+}
+
+
+
+
