@@ -208,26 +208,32 @@
 
 </section>
 
-<!-- INICIO BLOQUE COMICAOL - pega esto donde quieras -->
+<!-- INICIO BLOQUE COMICAOL - COMPLETO ORDENADO + ICONOS -->
 <style>
   .comicaol-bloque{width:100%; max-width:1200px; margin:0 auto; display:flex; font-family:Arial,sans-serif; box-sizing:border-box}
   .comicaol-bloque *{box-sizing:border-box}
   .cb-left{width:50%; background:#f5efe0; padding:20px 10px; position:relative; text-align:center}
   .cb-left h2{font-family:'Comic Sans MS',cursive; font-size:28px; color:#3b2a1a; line-height:1.2; margin:0 0 20px}
   .cb-center{position:relative; width:380px; height:380px; margin:0 auto; max-width:100%}
-  .cb-dot{position:absolute; width:82px; height:82px; background:#fff; border:2px solid #c9b896; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:7.5px; font-weight:800; text-align:center; line-height:1.1}
+  .cb-dot{position:absolute; width:82px; height:82px; background:#fff; border:2px solid #c9b896; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; font-size:7.5px; font-weight:800; text-align:center; line-height:1.1; gap:1px}
   .cb-lc{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:140px; height:140px; background:#d9c2a0; border:3px solid #6b4a2a; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; font-weight:900}
   .cb-arrow{position:absolute; right:-10px; top:50%; transform:translateY(-50%); width:60px; height:30px; background:#c9b896; clip-path:polygon(0 25%,70% 25%,70% 0,100% 50%,70% 100%,70% 75%,0 75%)}
   .cb-right{width:50%; background:#e8dbc0; padding:20px 10px; text-align:center}
   .cb-right h2{color:#0e4d2a; font-size:22px; font-weight:900; margin:0 0 20px}
   .cb-r-center{position:relative; width:380px; height:380px; margin:0 auto; max-width:100%}
   .cb-rdot{position:absolute; width:78px; height:78px; background:#fff; border-radius:50%; border:4px solid; display:flex; justify-content:center; align-items:center; overflow:hidden}
-  .cb-rdot img{width:70%; height:70%; object-fit:contain}
+  .cb-rdot img{width:70%; height:70%; object-fit:contain; background:#fff}
   .cb-rc{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:135px; height:135px; background:#f5efe0; border:3px solid #7ca68a; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; font-weight:800; font-size:10px}
-  /* posiciones */
   .p1{left:50%; top:0; transform:translateX(-50%)} .p2{right:15px; top:60px} .p3{right:-5px; bottom:55px} .p4{left:50%; bottom:0; transform:translateX(-50%)} .p5{left:-5px; bottom:55px} .p6{left:15px; top:60px}
-  .rp1{left:50%; top:0; transform:translateX(-50%); border-color:#0e5a6b} .rp2{right:15px; top:40px; border-color:#1a6bb5} .rp3{right:0; top:50%; transform:translateY(-50%); border-color:#0e8a7a} .rp4{right:15px; bottom:40px; border-color:#e67e22} .rp5{left:50%; bottom:0; transform:translateX(-50%); border-color:#1a2a8a} .rp6{left:15px; bottom:40px; border-color:#8a6a1a} .rp7{left:0; top:50%; transform:translateY(-50%); border-color:#2a8a2a} .rp8{left:15px; top:60%; transform:translateY(-50%); border-color:#2a7a3a}
-  .rp9{left:15px; top:15%; transform:translateY(-50%); border-color:#0e4d2a}
+  .rp1{left:50%; top:5%; transform:translate(-50%,-50%); border-color:#0e5a6b}
+  .rp2{left:77%; top:18%; transform:translate(-50%,-50%); border-color:#1a6bb5}
+  .rp3{left:92%; top:42%; transform:translate(-50%,-50%); border-color:#0e8a7a}
+  .rp4{left:86%; top:70%; transform:translate(-50%,-50%); border-color:#e67e22}
+  .rp5{left:64%; top:90%; transform:translate(-50%,-50%); border-color:#1a2a8a}
+  .rp6{left:36%; top:90%; transform:translate(-50%,-50%); border-color:#8a6a1a}
+  .rp7{left:14%; top:70%; transform:translate(-50%,-50%); border-color:#2a8a2a}
+  .rp8{left:8%; top:42%; transform:translate(-50%,-50%); border-color:#2a7a3a}
+  .rp9{left:23%; top:18%; transform:translate(-50%,-50%); border-color:#0e4d2a}
   @media(max-width:800px){.comicaol-bloque{flex-direction:column} .cb-left,.cb-right{width:100%} .cb-arrow{display:none}}
 </style>
 
@@ -235,12 +241,12 @@
   <div class="cb-left">
     <h2>Fuerza de montaña,<br>corazón de cooperativa</h2>
     <div class="cb-center">
-      <div class="cb-dot p1">HISTORIA</div>
-      <div class="cb-dot p2">MISIÓN Y<br>VISIÓN</div>
-      <div class="cb-dot p3">SERVICIOS</div>
-      <div class="cb-dot p4">MARCA<br>INSIGNIA</div>
-      <div class="cb-dot p5">NUESTRO<br>EQUIPO</div>
-      <div class="cb-dot p6">COMITÉS</div>
+      <div class="cb-dot p1"><span style="font-size:14px">📜</span>HISTORIA</div>
+      <div class="cb-dot p2"><span style="font-size:14px">🎯</span>MISIÓN Y<br>VISIÓN</div>
+      <div class="cb-dot p3"><span style="font-size:14px">☕</span>SERVICIOS</div>
+      <div class="cb-dot p4"><span style="font-size:14px">🏷️</span>MARCA<br>INSIGNIA</div>
+      <div class="cb-dot p5"><span style="font-size:14px">👥</span>NUESTRO<br>EQUIPO</div>
+      <div class="cb-dot p6"><span style="font-size:14px">🤝</span>COMITÉS</div>
       <div class="cb-lc"><span style="font-size:16px">COMICAOL</span><span style="font-size:12px; font-weight:400">Cooperativa</span><small style="font-size:10px">DESDE 1996</small></div>
     </div>
     <div class="cb-arrow"></div>
@@ -255,12 +261,12 @@
       <div class="cb-rdot rp5"><img src="GIZ.jpg" alt="GIZ"></div>
       <div class="cb-rdot rp6"><img src="BECAMO.jpg" alt="BECAMO"></div>
       <div class="cb-rdot rp7"><img src="ANACAFE.jpg" alt="ANACAFE"></div>
-      <div class="cb-rdot rp7"><img src="ICA.jpg" alt="ICA"></div>
-      <div class="cb-rdot rp8"><img src="CIAT.jpg" alt="CIAT"></div>
+      <div class="cb-rdot rp8"><img src="ICA.jpg" alt="ICA"></div>
+      <div class="cb-rdot rp9"><img src="CIAT.jpg" alt="CIAT"></div>
       <div class="cb-rc">PROCESO DEL CAFE<br>☕</div>
     </div>
   </div>
-</div><br>
+</div>
 <!-- FIN BLOQUE COMICAOL -->
 
           <div style="text-align: center;">
